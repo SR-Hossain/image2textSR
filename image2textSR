@@ -1,0 +1,1 @@
+rm -f /tmp/a.png && flameshot gui --path /tmp/a.png && python3 /copy
