@@ -13,6 +13,8 @@ From now on, just type
 <code>image2textSR</code>
 on terminal and voila, see the magic!!!
 
+Use cursor to select area to copy and then click on the tick mark to confirm the selection...
+
 Tips: I would recommend that make a custom shortcut in your distro for terminal command...
 
 <h1>I have used flameshot as screenshot tool here... Take a tour in <a href="https://github.com/flameshot-org/flameshot">the github page</a> of flameshot.....</h1>
