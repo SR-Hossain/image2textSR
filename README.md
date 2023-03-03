@@ -5,8 +5,17 @@ Make sure you have python3... If you don't have python3 and rather have python, 
 ```
 git clone https://github.com/SR-Hossain/image2textSR
 cd image2textSR
-
 sudo chmod +x firstOneTimeRun.sh
+```
+
+if you are using Arch-based linux distro run this code
+```
+python3 arch_prerun.py
+```
+if you are not using arch, then DON'T RUN THE ABOVE CODE!!!
+
+Now continue executing the commands shown below:
+```
 ./firstOneTimeRun.sh
 ```
 From now on, just type
