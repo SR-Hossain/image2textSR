@@ -3,11 +3,11 @@ Copy text from image using screenshot tool in any linux distro...
 
 Make sure you have python3... If you don't have python3 and rather have python, then you have to change the firstOneTimeRun.sh and replace python3 with python one time...
 ```
-<code>git clone https://github.com/SR-Hossain/image2textSR</code>
-<code>cd image2textSR</code>
+git clone https://github.com/SR-Hossain/image2textSR
+cd image2textSR
 
-<code>sudo chmod +x firstOneTimeRun.sh</code>
-<code>./firstOneTimeRun.sh</code>
+sudo chmod +x firstOneTimeRun.sh
+./firstOneTimeRun.sh
 ```
 From now on, just type
 <code>image2textSR</code>
