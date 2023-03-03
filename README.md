@@ -17,6 +17,7 @@ if you are not using arch, then DON'T RUN THE ABOVE CODE!!!
 Now continue executing the commands shown below:
 ```
 ./firstOneTimeRun.sh
+image2textSR
 ```
 From now on, just type
 <code>image2textSR</code>
