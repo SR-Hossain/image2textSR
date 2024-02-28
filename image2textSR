@@ -1,1 +1,25 @@
-rm -f /tmp/a.png && flameshot gui --path /tmp/a.png && python3 /image2text.py
+#!/bin/bash
+
+screenshot_dir="/tmp/image"
+mkdir -p "${screenshot_dir}"
+rm -f "${screenshot_dir}"/*
+flameshot gui --path "${screenshot_dir}"
+
+python3 - <<EOF
+from PIL import Image
+import pytesseract
+import pyperclip
+import os
+import glob
+
+screenshot_dir = "/tmp/image"
+list_of_files = glob.glob(os.path.join(screenshot_dir, '*'))
+screenshot_path = max(list_of_files, key=os.path.getctime)
+extracted_text = pytesseract.image_to_string(Image.open(screenshot_path))
+pyperclip.copy(extracted_text)
+EOF
+
+
+rm -f "${screenshot_dir}"/*
+
+echo "Copied to clipboard"
