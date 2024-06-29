@@ -1,4 +1,7 @@
-# ! One issue in gnome, fix will be in 1-2 days insha'Allah... 
+# requirements
+```
+xclip
+```
 
 # image2textSR
 
