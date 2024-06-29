@@ -16,6 +16,7 @@ screenshot_dir = "/tmp/image"
 list_of_files = glob.glob(os.path.join(screenshot_dir, '*'))
 screenshot_path = max(list_of_files, key=os.path.getctime)
 extracted_text = pytesseract.image_to_string(Image.open(screenshot_path))
+pyperclip.set_clipboard('xclip')
 pyperclip.copy(extracted_text)
 EOF
 
