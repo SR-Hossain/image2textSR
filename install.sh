@@ -68,7 +68,7 @@ install() {
     case $choice in
         1)
             echo "You selected Ubuntu"
-            sudo apt install flameshot python3-pip tesseract-ocr libtesseract-dev libleptonica-dev pkg-config -y
+            sudo apt install xclip flameshot python3-pip tesseract-ocr libtesseract-dev libleptonica-dev pkg-config -y
             pip3 install pytesseract pyperclip
             ;;
         2)
