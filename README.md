@@ -1,8 +1,3 @@
-# requirements
-```
-xclip
-```
-
 # image2textSR
 
 Copy text from image using screenshot tool in debian based(ubuntu)/arch based(manjaro) linux distro...
