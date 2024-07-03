@@ -68,8 +68,8 @@ install() {
     case $choice in
         1)
             echo "You selected Ubuntu"
-            sudo apt install xclip flameshot python3-pip tesseract-ocr libtesseract-dev libleptonica-dev pkg-config -y
-            pip3 install pytesseract pyperclip
+            sudo apt install xclip flameshot python3-pip tesseract-ocr libtesseract-dev libleptonica-dev pkg-config python3-pip -y
+            pip3 install pytesseract pyperclip || pip3 install pytesseract pyperclip --break-system-packages
             ;;
         2)
             echo "You selected Arch Linux"
