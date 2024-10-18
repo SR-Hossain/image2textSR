@@ -73,7 +73,7 @@ install() {
             ;;
         2)
             echo "You selected Arch Linux"
-            sudo pacman -S tesseract-data-eng --noconfirm
+            sudo pacman -S flameshot tesseract-data-eng --noconfirm
             pip install pytesseract pyperclip --break-system-packages
             ;;
         *)
